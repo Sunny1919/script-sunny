@@ -1,5 +1,5 @@
 local UniverseID = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://apis.roblox.com/universes/v1/places/"..game.PlaceId.."/universe")).universeId
-if game.PlaceId == 1537690962 or game.PlaceId == 4079902982 then
+if game.PlaceId == 123068038613059 then
     loadstring(Game:HttpGet("https://raw.githubusercontent.com/Sunny1919/script-sunny/refs/heads/main/iq0glassjumpingropebridge"))()
 else
     game:GetService("Players").LocalPlayer:Kick("Game Does Not Support")
