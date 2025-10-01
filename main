@@ -1,10 +1,16 @@
+
 local TargetPlaceId = 123068038613059
 local CurrentPlaceId = game.PlaceId
 local KickMessage = "Game Does Not Support"
 local ScriptURL = "https://raw.githubusercontent.com/Sunny1919/script-sunny/refs/heads/main/iq0glassjumpingropebridge"
 
+-- Logic kiểm tra
 if CurrentPlaceId == TargetPlaceId then
+    -- Tải và thực thi script nếu đúng Place
+    print("Place ID hợp lệ. Đang tải và thực thi script...")
     loadstring(game:HttpGet(ScriptURL))()
 else
+    -- Tự kick nếu không khớp Place ID
+    print("Place ID không hợp lệ. Đang tự kick...")
     game:GetService("Players").LocalPlayer:Kick(KickMessage)
 end
