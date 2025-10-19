@@ -1,16 +1,19 @@
+local TargetPlaceId_1 = 123068038613059
+local ScriptURL_1 = "https://raw.githubusercontent.com/Sunny1919/script-sunny/refs/heads/main/iq0glassjumpingropebridge"
 
-local TargetPlaceId = 123068038613059
+local TargetPlaceId_2 = 118915549367482
+local ScriptURL_2 = "https://raw.githubusercontent.com/Sunny1919/script-sunny/refs/heads/main/dontwakeupthebrainrot"
+
 local CurrentPlaceId = game.PlaceId
 local KickMessage = "Game Does Not Support"
-local ScriptURL = "https://raw.githubusercontent.com/Sunny1919/script-sunny/refs/heads/main/iq0glassjumpingropebridge"
 
--- Logic kiểm tra
-if CurrentPlaceId == TargetPlaceId then
-    -- Tải và thực thi script nếu đúng Place
-    print("Place ID hợp lệ. Đang tải và thực thi script...")
-    loadstring(game:HttpGet(ScriptURL))()
+if CurrentPlaceId == TargetPlaceId_1 then
+    print("Place ID 1 hợp lệ. Đang tải và thực thi script...")
+    loadstring(game:HttpGet(ScriptURL_1))()
+elseif CurrentPlaceId == TargetPlaceId_2 then
+    print("Place ID 2 hợp lệ. Đang tải và thực thi script...")
+    loadstring(game:HttpGet(ScriptURL_2))()
 else
-    -- Tự kick nếu không khớp Place ID
     print("Place ID không hợp lệ. Đang tự kick...")
     game:GetService("Players").LocalPlayer:Kick(KickMessage)
 end
