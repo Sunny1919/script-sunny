@@ -4,6 +4,8 @@ elseif game.PlaceId == 118915549367482 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Sunny1919/script-sunny/refs/heads/main/dontwakeupthebrainrot"))()
 elseif game.PlaceId == 81440632616906 then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Sunny1919/script-sunny/refs/heads/main/digtoearthcore"))()
+elseif game.PlaceId == 108207853263201 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Sunny1919/script-sunny/refs/heads/main/rizztower"))()
 else
     game:GetService("Players").LocalPlayer:Kick("Game Does Not Support")
 end
